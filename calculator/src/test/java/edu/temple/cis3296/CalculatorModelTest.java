@@ -44,6 +44,8 @@ public class CalculatorModelTest {
 	public  void shouldClear() { assertEquals(0.0, calc.operationClear(), 0.1);}
 
 	
-
-
+  @Test
+  public void shouldDivEightThreeByFour() {
+    assertEquals(2f, calc.operationDiv(8f, 4f), 0.1);
+  }
 }
